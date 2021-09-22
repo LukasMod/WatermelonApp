@@ -25,7 +25,7 @@ const BUTTON_TEXT: TextStyle = {
 export const WelcomeScreen: FC<StackScreenProps<NavigatorParamList, "welcome">> = observer(
   ({ navigation }) => {
     const chartScreen = () => navigation.navigate("chart")
-    const postsScreen = () => navigation.navigate("posts")
+    const postsScreen = () => navigation.navigate("postsScreen")
 
     return (
       <View testID="WelcomeScreen" style={FULL}>

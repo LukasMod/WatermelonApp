@@ -27,7 +27,7 @@ import { PostsScreen } from "../screens/posts/posts-screen"
 export type NavigatorParamList = {
   welcome: undefined
   chart: undefined
-  posts: undefined
+  postsScreen: undefined
 }
 
 // Documentation: https://reactnavigation.org/docs/stack-navigator/
@@ -43,7 +43,7 @@ const AppStack = () => {
     >
       <Stack.Screen name="welcome" component={WelcomeScreen} />
       <Stack.Screen name="chart" component={ChartScreen} />
-      <Stack.Screen name="posts" component={PostsScreen} />
+      <Stack.Screen name="postsScreen" component={PostsScreen} />
     </Stack.Navigator>
   )
 }
