@@ -26,6 +26,7 @@ export const WelcomeScreen: FC<StackScreenProps<NavigatorParamList, "welcome">> 
   ({ navigation }) => {
     const chartScreen = () => navigation.navigate("chart")
     const postsScreen = () => navigation.navigate("postsScreen")
+    const todoScreen = () => navigation.navigate("todoScreen")
 
     return (
       <View testID="WelcomeScreen" style={FULL}>
@@ -42,6 +43,7 @@ export const WelcomeScreen: FC<StackScreenProps<NavigatorParamList, "welcome">> 
             style={BUTTON}
             textStyle={BUTTON_TEXT}
           />
+          <Button onPress={todoScreen} text="todo example" style={BUTTON} textStyle={BUTTON_TEXT} />
         </Screen>
       </View>
     )

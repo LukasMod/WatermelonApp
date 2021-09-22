@@ -27,5 +27,12 @@ export default appSchema({
     //     { name: "post_id", type: "string", isIndexed: true },
     //   ],
     // }),
+    tableSchema({
+      name: 'tasks',
+      columns: [
+        {name: 'name', type: 'string'},
+        {name: 'completed', type: 'boolean'},
+      ],
+    }),
   ],
 })

@@ -11,6 +11,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import { WelcomeScreen, ChartScreen } from "../screens"
 import { navigationRef } from "./navigation-utilities"
 import { PostsScreen } from "../screens/posts/posts-screen"
+import TodoScreen from "../screens/todo/todo-screen"
 
 /**
  * This type allows TypeScript to know what routes are defined in this navigator
@@ -28,6 +29,7 @@ export type NavigatorParamList = {
   welcome: undefined
   chart: undefined
   postsScreen: undefined
+  todoScreen: undefined
 }
 
 // Documentation: https://reactnavigation.org/docs/stack-navigator/
@@ -44,6 +46,7 @@ const AppStack = () => {
       <Stack.Screen name="welcome" component={WelcomeScreen} />
       <Stack.Screen name="chart" component={ChartScreen} />
       <Stack.Screen name="postsScreen" component={PostsScreen} />
+      <Stack.Screen name="todoScreen" component={TodoScreen} />
     </Stack.Navigator>
   )
 }

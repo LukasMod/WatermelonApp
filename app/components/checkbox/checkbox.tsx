@@ -7,7 +7,7 @@ import { CheckboxProps } from "./checkbox.props"
 const ROOT: ViewStyle = {
   flexDirection: "row",
   paddingVertical: spacing[1],
-  alignSelf: "flex-start",
+  // alignSelf: "flex-start",
 }
 
 const DIMENSIONS = { width: 16, height: 16 }

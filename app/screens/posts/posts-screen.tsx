@@ -1,10 +1,9 @@
 import React, { FC, useState } from "react"
 import { ViewStyle, TextStyle, Dimensions } from "react-native"
-import withObservables from "@nozbe/with-observables"
-import { Button, Header, Screen,  TextField } from "../../components"
+import { Button, Header, Screen, TextField } from "../../components"
 import { color, spacing } from "../../theme"
 import { palette } from "../../theme/palette"
-import { addPost, observePosts } from "../../db/model/helpers"
+import { addPost } from "../../db/model/helpers"
 import Post from "../../db/model/post"
 import PostList from "../../components/post-list/post-list"
 
@@ -78,9 +77,3 @@ export const PostsScreen: FC<{ posts: Post[]; navigation: any }> = ({ posts, nav
     </Screen>
   )
 }
-
-const enhanceWithPosts = withObservables(["posts"], () => ({
-  posts: observePosts(),
-}))
-
-export default enhanceWithPosts(PostsScreen)

@@ -5,6 +5,7 @@ import Weight from "./weight"
 import schema from "./schema"
 import migrations from "./migrations"
 import Post from "./post"
+import Task from "./task"
 
 const adapter = new SQLiteAdapter({
   schema,
@@ -15,5 +16,5 @@ const adapter = new SQLiteAdapter({
 
 export const database = new Database({
   adapter,
-  modelClasses: [Weight, Post],
+  modelClasses: [Weight, Post, Task],
 })

@@ -15,8 +15,6 @@ const HEADER_TITLE: TextStyle = {
 }
 
 const PostList = ({ posts }) => {
-  console.log(posts)
-
   return (
     <View>
       <Text text={posts ? posts.length : "nothing"} style={HEADER_TITLE} />
